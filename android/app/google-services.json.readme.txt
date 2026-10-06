@@ -1,0 +1,18 @@
+========================================================================
+FIREBASE ANDROID INTEGRATION INSTRUCTIONS
+========================================================================
+
+To connect this app to your Firebase project:
+
+1. Go to Firebase Console (https://console.firebase.google.com/).
+2. Create or select your project: "Municipal Complaint Management System".
+3. Add an Android App with Package Name: `com.example.geo_tag_camera`.
+4. Download `google-services.json`.
+5. Place `google-services.json` in this directory:
+   `android/app/google-services.json`
+
+6. In `pubspec.yaml`, all Firebase dependencies (`firebase_core`, `firebase_auth`,
+   `cloud_firestore`, `firebase_storage`) are already installed!
+
+7. Run `flutter run` on your Android device or emulator.
+========================================================================

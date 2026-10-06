@@ -1,0 +1,79 @@
+name: geo_tag_camera
+description: "AI-Powered Geo-Tagged Municipal Complaint Management System"
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.13.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Icons
+  cupertino_icons: ^1.0.8
+
+  # Camera & Location (existing — preserved)
+  camera: 0.10.5+9
+  geolocator: ^14.0.3
+  geocoding: ^5.0.0
+  image_picker: ^1.2.3
+  path_provider: ^2.1.6
+  path: ^1.9.0
+  gal: ^1.2.0
+
+  # State Management
+  provider: ^6.1.2
+
+  # Firebase
+  firebase_core: ^3.13.0
+  firebase_auth: ^5.5.0
+  cloud_firestore: ^5.6.0
+  firebase_storage: ^12.4.0
+  firebase_messaging: ^15.2.5
+
+  # Maps
+  google_maps_flutter: ^2.10.0
+
+  # Image Processing (geo-tag watermark)
+  image: ^4.5.4
+  # AI (Google Gemini)
+  google_generative_ai: ^0.4.7
+
+  # UI
+  google_fonts: ^6.2.1
+  cached_network_image: ^3.4.1
+  flutter_animate: ^4.5.2
+  shimmer: ^3.0.0
+
+  # Notifications
+  flutter_local_notifications: ^18.0.1
+
+  # Audio Recording & Playback
+  record: 5.1.2
+  audioplayers: ^6.1.0
+
+  # Utilities
+  intl: ^0.20.2
+  permission_handler: ^11.4.0
+  connectivity_plus: ^6.1.4
+  uuid: ^4.5.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/
+    - assets/animations/
+
+# Override record_linux with a local stub that properly implements
+# record_platform_interface 1.6.0 (startStream, hasPermission with request param).
+# record_linux 0.6.0 and 0.7.2 from pub.dev both fail to compile.
+dependency_overrides:
+  record_linux:
+    path: packages/record_linux_stub
