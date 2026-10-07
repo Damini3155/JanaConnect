@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "258973075015",
+    "project_id": "geotagcamera-21dd7",
+    "storage_bucket": "geotagcamera-21dd7.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:258973075015:android:1265260c6379498d32d362",
+        "android_client_info": {
+          "package_name": "com.example.geo_tag_camera"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "YOUR_FIREBASE_API_KEY_HERE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
